@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2{
+        text-align: center;
+    }
+    form{
+       border: 2px solid black;
+        width: 25%;
+        margin-left: 35%;
+        padding: 30px;
+    }
+    #label{
+        font-weight: bold;
+        margin-left: 25px;
+        margin-right: 10px;
+    }
+</style>
+<body>
+    <h2>Javascript Form Validation</h2>
+      <!-- This is form design -->
+    <form onsubmit="formvalidation()">
+    <label id="label" >Full Name:</label>
+    <input type="text" name="fullname" id="firstname" style="margin-bottom: 10px;" > <br>
+   
+    <label id="label" for="">Username:</label>
+    <input type="text" name="username" id="username" style="margin-bottom: 10px; margin-left: 2px;"><br>
+
+    <label id="label" for="">Email :</label>
+    <input type="text" name="email" id="email"style="margin-bottom: 10px;margin-left: 21px;" ><br>
+
+    <label id="label" for="">Address:</label>
+   <input type="text" name="address" id="address"style="margin-bottom: 10px;margin-left: 11px;"><br>
+
+   <label id="label" for="">Zip Code:</label>
+   <input type="text" name="zipcode" id="zipcode" style="margin-bottom: 25px; margin-left: 6px;"><br>
+
+   <input type="submit" name="submit" id="submit" value="Check Form" style="margin-left: 120px; padding: 8px;">
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+function formvalidation()
+{
+    var firstname=document.getElementById("firstname").value;
+    var address=document.getElementById("address").value;
+    var username=document.getElementById("username").value;
+    var email=document.getElementById("email").value;
+    var zipcode=document.getElementById("zipcode").value;
+    //alert(firstname+address+username+email+zipcod e);   
+    // Accepted values in each fields
+    var zipexp=/^[0-9]+$/; //only numbers
+    var namexp=/^[a-zA-Z]+$/; //only text
+    var addexp=/^[0-9a-zA-Z]+$/; //text and numbers
+    var emailexp=/^[A-Z0-9.%+-]+@[A-Z0-9]+.+[A-Z]{2,4}/igm;//email expression
+    //  Validation 
+    if(firstname.length==0||address.length==0||username.length==0||zipcode.length==0||email.length==0)
+    {
+        alert("All fields are mandatory"); //This segment displays the validation rule for all fields
+        return false;
+    }
+    else
+    {
+        if(!firstname.match(namexp))
+        {
+            alert("Please enter right First Name");
+            return false;
+        }
+        if(!(username.length>=6 && username.length<=8))
+        {
+            alert("Username must be greater than 6 and less than 8 character");
+            return false;
+        }
+        if(!address.match(addexp))
+        {
+            alert("Please enter Address");
+            return false;
+        }
+        if(!email.match(emailexp))
+        {
+            alert("Please enter valid email address");
+            return false;
+        }
+        if(!zipcode.match(zipexp))
+        {
+            alert("Please enter correct szipcode");
+            return false;
+        }
+
+    }
+}
+</script>

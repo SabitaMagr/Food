@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Objects</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script type="text/javascript">
+        var car = { type: "Rangover", model: "500", color: "Red" };
+        document.getElementById("demo").innerHTML = "The car type is " + car.type + " and the model is" + car.model + " and the color is " + car.color;
+
+
+        var person = {
+            firstname: "Sita",
+            lastname: "Magar",
+            age: 80,
+            eyecolor: "red"
+        };
+        document.write(person.nationality);
+        person.nationality = "English"; //adding property
+        document.write(person.firstname, person.age, person.nationality);
+
+        delete person.eyecolor;
+        document.write(person.eyecolor);
+    </script>
+
+    <script>
+        var person =
+        {
+            firstname: "John",
+            lastname: "Doe",
+            id: 234,
+            fullname: function () {
+                return this.firstname + " " + this.lastname;
+            }
+        };
+    </script>
+    <script>
+        name = person.fullname();
+        document.write(name);
+    </script>
+
+</body>
+
+</html>

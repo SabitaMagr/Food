@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Javascript Constructer</h2>
+    <p id="demo"></p>
+    <script type="text/javascript">
+        function Person(first, last, age, eye) {
+            this.firstname = first;
+            this.lastname = last;
+            this.age = age;
+            this.eyecolor = eye;
+        }
+        Person.prototype.nationality="Nepalese"; //adding new properties
+        Person.prototype.name=function()//adding properties using function 
+        {
+            return this.firstname+" "+this.lastname;
+        }
+        var a = new Person("Sabita", "Magar", 27, "Skyblue");
+        var b = new Person("Pratigya", "Mishra", 27, "black");
+        document.write(a.firstname);
+        document.write("<br>");
+        document.write(b.firstname);
+
+        document.getElementById("demo").innerHTML = "My firstname is " + a.firstname + " lastname is " + a.lastname + " age is " + a.age + " eyecolor is " + a.eyecolor+" nationality "+a.nationality+" name "+a.name()+"<br>"+
+       "My firstname is " + b.firstname + " lastname is " + b.lastname + " age is " + b.age + " eyecolor is " + b.eyecolor+" nationality "+a.nationality;
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iste rerum nostrum repellat accusamus at quas molestiae veniam! Culpa, voluptates amet sunt in at quos nihil totam? Doloribus, adipisci quibusdam?</p>
+    <p id="demo"></p>
+    <script type="text/javascript">
+
+        function hello()
+        {
+            alert("Hello Guys.")
+        }
+        hello();
+        function parag(a)
+        {if (a==1)
+            document.getElementById("para").style="color:blue";
+            else
+            document.getElementById("para").style="color:red";
+
+        }
+       
+    </script>
+     <button onclick="parag(1)">Click to change blue</button>
+     <button onclick="parag(2)">Click to change red</button>
+     
+</body>
+</html>

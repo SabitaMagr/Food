@@ -1,0 +1,23 @@
+table
+{
+    background-color: red;
+}
+th
+{
+    background-color: black;
+    color:white;
+    font: bold;
+    text-align: center;
+}
+td
+{
+    color: black;
+    text-align: left;
+}
+form
+{
+    height: 40%;
+    width: 30%;
+    padding: 20px;
+    border: 5px solid black;
+}

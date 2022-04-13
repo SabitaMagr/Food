@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    The javascript Math object allows you to perform mathematical tasks on numbers.
+    <script type="text/javascript">
+    document.write("<br>");
+    document.write(Math.PI);
+    document.write("<br>");
+    document.write(Math.round(4.7));
+    document.write("<br>");
+    document.write(Math.round(4.4));
+    document.write("<br>");
+    document.write(Math.ceil(4.2));
+    document.write("<br>");
+    document.write(Math.floor(4.3));
+    document.write("<br>");
+    document.write(Math.max(14,30,50,100.2,50*5,100*Math.PI));
+    document.write("<br>");
+    document.write(Math.min(0.00,-4,-9));
+    document.write("<br>");
+    document.write(Math.pow(1.2,1.2));
+    </script>
+    <p>The data object has methods for manipulation dates and time </p>
+    <script type="text/javascript">
+        var rightnow=new Date();
+        document.write("<br>");
+        document.write(rightnow);
+        document.write("<br>");
+        document.write(rightnow.getDate());
+        document.write("<br>");
+        document.write(rightnow.getMonth());
+        document.write("<br>");
+        document.write(rightnow.getHours());
+        document.write("<br>");
+        document.write(rightnow.getTime());
+
+    </script>
+    <p>The string object has methods for manipulating strings.</p>
+    <script type="text/javascript">
+        var s="This is String";
+        document.write("<br>");
+        document.write("Length of string:"+s.length);
+        document.write("<br>");
+        document.write("Character at position:"+s.charAt(6));
+        document.write("<br>");
+        document.write("Character code at position at 5:"+s.charCodeAt(6));
+        document.write("<br>");
+        document.write("Substring from position 4 to 7:"+s.substring(4,7));
+        document.write("<br>");
+        document.write( s.split ( "  " ));
+        document.write("<br>");
+        document.write(s.toLowerCase());
+        document.write("<br>");
+        document.write(s.toUpperCase());
+
+    </script>
+</body>
+</html>

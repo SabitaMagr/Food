@@ -1,0 +1,19 @@
+div{
+   padding: 8px; 
+}
+.container
+{
+    border:  2px solid black;
+}
+.item{
+    border: 3px dashed red;
+}
+#lastitem{
+    color: aqua;
+}
+a[target]{
+ color: blue;
+}
+a:hover{
+     border: 2px solid black;
+}

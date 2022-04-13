@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embeded</title>
+</head>
+<body>
+    <h1>Embeded Part</h1>
+    <section style="margin-left: 25%; width: 55%; background-color: antiquewhite;">
+        <figure>
+            <img src="./download.jfif" alt="blood" style="width: 400px; margin-left: 18%;">
+            <figcaption style="margin-left: 40%; font-weight: bolder;">Fig 1:Life Savers</figcaption>
+            <p>Blood Bank Management System (BBMS) is a web based system that can assists the information of blood bag during its handling in the blood bank. With this system, the user of this system can key in the result of blood test that has been conducted to each of the blood bag received by the blood bank</p>
+        </figure>
+    </section >
+    <section style="width: 80%;margin-left: 10%; display: flex;">
+        <img src="./Pictures/download.png" alt="download" style="width: 60%;height: 40%; margin-right: 10%;">
+        <iframe src="https://www.youtube.com/" frameborder="1"></iframe>
+    </section>
+    <div>
+        <embed src="index.html" type="text/html">
+        <embed src="./Pictures/login.jpg" type="image/jpg">
+         <embed src="audio.mp3" type="audio/mp3">
+        <object data="video.mp4" type="video/mp4">
+            <param name="autoplay" value="true">
+        </object>   
+    </div>
+    <canvas id="can">
+        Your browser doesnot support Canvas tag.
+    </canvas>
+    <script>
+        var c=document.getElementById("can");
+        var ctx=c.getContext("2d");
+        ctx.fillStyle="red";
+        ctx.fillRect(30,30,85,75);
+        ctx.fillStyle="blue";
+        ctx.fillRect(50,50,85,75);
+        ctx.fillStyle="yellow";
+        ctx.fillRect(70,70,85,75);
+    </script>
+    <section>
+        <audio controls autoplay loop>
+           <source src="./Busy City - TrackTribe.mp3" type="audio/mp3">
+        </audio>
+        <video controls loop autoplay muted>
+            <source src="https://www.youtube.com/watch?v=UxV_paz84Mw&list=RDUxV_paz84Mw&start_radio=1" type="video/mp4">
+        </video>
+    </section>
+    <h1>Tabular Data</h1>
+    <section style="margin-left: 30%;">
+       <div style="margin-left: 70px;">
+        <h2>Aryan School of Engineering</h2>
+        <p>New Baneshwor,Kathmandu</p>
+        <h3>BIT 4th Semester</h3>
+       </div>
+        <table border="1">
+            <colgroup>
+                <col style="background-color: black;">
+                <col span="3" style="background-color: rgb(219, 109, 19);">
+            </colgroup>
+            <tr>
+                <th style="color: white;">Student Id</th>
+                <th>Student's Name</th>
+                <th>Contact Number</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td style="color: white;">1</td>
+                <td>Rejina Mainali</td>
+                <td>986743623</td>
+                <td>rejian@text.com</td>
+            </tr>
+            <tr>
+                <td style="color: white;">2</td>
+                <td>Pratigya Mishra</td>
+                <td>986746548</td>
+                <td>pratigya@text.com</td>
+            </tr>
+            <tr>
+                <td style="color: white;">3</td>
+                <td>Sabita Magar</td>
+                <td>986636523</td>
+                <td>Sabita@text.com</td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Average</th>
+                <th rowspan="2">Red Eyes</th>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td>Weight</td>
+            </tr>
+
+            <tr>
+                <td>Male</td>
+                <td>5.4</td>
+                <td>59</td>
+                <td>33%</td>
+            </tr>
+            <tr>
+                <td>Female</td>
+                <td>5.4</td>
+                <td>59</td>
+                <td>33%</td>
+            </tr>
+            
+        </table>
+    </section>
+    
+</body>
+</html>
